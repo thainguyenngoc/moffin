@@ -7,7 +7,6 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "bootstrap": "^4.1.1",
     "jquery": "^3.4.1",
     "jquery-form-validator": "^2.3.77",
     "jquery-ujs": "^1.2.2",
@@ -17,6 +16,7 @@
   },
   "devDependencies": {
     "babel-brunch": "6.1.1",
+    "bootstrap": "4.0.0-alpha.6",
     "brunch": "2.10.9",
     "clean-css-brunch": "2.10.0",
     "sass-brunch": "^2.10.8",
