@@ -6,24 +6,24 @@
   <% end %>
 
   <div class="form-group">
-    <%= label f, :title, class: "control-label" %>
+    <label>Tiêu đề </label>
     <%= text_input f, :title, class: "form-control" %>
     <%= error_tag f, :title %>
   </div>
 
   <div class="form-group">
-    <%= label f, :path, class: "control-label" %>
+    <label>URL</label>
     <%= text_input f, :path, class: "form-control" %>
     <%= error_tag f, :path %>
   </div>
 
   <div class="form-group">
-    <%= label f, :image, class: "control-label" %>
+    <label>Hình ảnh</label>
     <%= file_input f, :image, class: "form-control" %>
     <%= error_tag f, :image %>
   </div>
 
   <div class="form-group">
-    <%= submit "Submit", class: "btn btn-primary" %>
+    <%= submit "Đăng", class: "btn btn-primary" %>
   </div>
 <% end %>

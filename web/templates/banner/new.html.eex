@@ -1,5 +1,8 @@
-<h2>New Banner</h2>
+<span><%= link "Home", to: page_path(@conn, :dashboard) %></span>
+>
+<span><%= link "Banners", to: banner_path(@conn, :index) %></span>
+
+<h3>Banner mới</h3>
 
 <%= render "form.html", Map.put(assigns, :action, banner_path(@conn, :create)) %>
 
-<span><%= link "Back", to: banner_path(@conn, :index) %></span>

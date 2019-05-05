@@ -19,5 +19,5 @@
   <% end %>
 <% else %>
   <h1>Hello <%= @maybe_user.username%>!</h1>
-  <span><%= link "Logout", to: page_path(@conn, :logout), method: :get%></span>
+  <h1></h1>
 <% end %>

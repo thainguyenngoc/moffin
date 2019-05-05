@@ -1,18 +1,29 @@
-<h2>Show Banner</h2>
+<span><%= link "Home", to: page_path(@conn, :dashboard) %></span>
+>
+<span><%= link "Banners", to: banner_path(@conn, :index) %></span>
 
-<ul>
 
-  <li>
-    <strong>Title:</strong>
-    <%= @banner.title %>
-  </li>
+<h3>Banner</h3>
 
-  <li>
-    <strong>Image:</strong>
-    <img src="<%= Mofiin.Media.url({ @banner.image, @banner }) %>" width="300" />
-  </li>
 
-</ul>
 
-<span><%= link "Edit", to: banner_path(@conn, :edit, @banner) %></span>
-<span><%= link "Back", to: banner_path(@conn, :index) %></span>
+<table class="table table-sm table-dark">
+  <tbody>
+    <tr>
+      <th>Tiêu đề:</th>
+      <td scope="col"><%= @banner.title %></td>
+    </tr>
+    <tr>
+      <th>Hình ảnh:</th>
+      <td scope="col">
+        <img class="adm-banner adm-banner--large" src="<%= Mofiin.Media.url({ @banner.image, @banner }) %>" width="300" />
+      </td>
+    </tr>
+    <tr>
+      <th>Link:</th>
+      <td scope="col">
+        <%= link @banner.path, to: @banner.path %>
+      </td>
+    </tr>
+  </tbody>
+</table>

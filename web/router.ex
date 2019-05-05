@@ -33,19 +33,20 @@ defmodule Mofiin.Router do
   end
 
   scope "/admin", Mofiin do
-    pipe_through [:browser, :auth, :admin_layout]
+    pipe_through [:browser, :auth]
 
     get "/", PageController, :get_login
     post "/", PageController, :login
-    get "/logout", PageController, :logout
-
-    get "/pictures/:id/delete", BannerController, :delete
-    resources "/pictures", BannerController
   end
 
-  scope "/", Mofiin do
-    pipe_through [:browser, :auth, :ensure_auth]
+  scope "/admin", Mofiin do
+    pipe_through [:browser, :auth, :ensure_auth, :admin_layout]
 
+    get "/logout", PageController, :logout
+
+    get "/banners/:id/delete", BannerController, :delete
+    resources "/banners", BannerController
+    get "/dashboard", PageController, :dashboard
     get "/secret", PageController, :secret
   end
 

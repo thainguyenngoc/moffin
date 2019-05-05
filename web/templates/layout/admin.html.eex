@@ -15,11 +15,58 @@
     </script>
   </head>
 
-  <body>
+  <body class="adm-body">
     <div class="container">
-      <header class="header">
-        ADMIN
-      </header>
+
+    		<nav>
+			<div class="adm-sidebar">
+				<div class="sidebar-header">
+					<img src="<%= static_path(@conn, "/images/mofiin-logo.svg") %>" alt="Admin" width="120px">
+				</div>
+
+				<ul class="nav">
+					<li class="nav-item">
+						<a href="<%= page_path(@conn, :dashboard) %>" class="nav-link">
+							<i class="fa fa-bar-chart"></i>
+							Dashboard
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="<%= banner_path(@conn, :index) %>" class="nav-link">
+							<i class="fa fa-check-square-o"></i>
+							Banner
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="<%= page_path(@conn, :logout) %>" class="nav-link">
+							<i class="fa fa-check-square-o"></i>
+							Logout
+						</a>
+					</li>
+				
+        </ul>
+			</div>
+		</nav><!-- Finalizando a nav -->
+
+      <header>
+        <div class="adm-header">
+          <div class="clearfix">
+            <div class="datetimer float-right">
+              <p>
+                <span class="mark">
+                  Hello <%= raw Guardian.Plug.current_resource(@conn).username %>!
+                </span>
+              </p>
+
+              <div class="user">
+                <img src="<%= static_path(@conn, "/images/user.png") %>" alt="Admin" width="30px">
+              </div>
+            </div>
+          </div>
+        </div>
+		  </header><!-- Finalizando o header -->
 
       <%= if info = get_flash(@conn, :info) do %>
         <p class="alert alert-info" role="alert"><%= info %></p>

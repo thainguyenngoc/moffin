@@ -9,11 +9,16 @@ defmodule Mofiin.PageController do
     render conn, "index.html"
   end
 
+  def dashboard(conn, _params) do
+    render conn, "dashboard.html"
+  end
+
+  @spec get_login(Plug.Conn.t(), any()) :: Plug.Conn.t()
   def get_login(conn, _params) do
     changeset = Auth.change_user(%User{})
     maybe_user = Guardian.Plug.current_resource(conn)
     message = if maybe_user != nil do
-      "Someone is logged in"
+      "Welcomeback! Please login."
     else
       "No one is logged in"
     end
@@ -37,7 +42,7 @@ defmodule Mofiin.PageController do
     conn
     |> put_flash(:success, "Welcome back!")
     |> Guardian.Plug.sign_in(user)
-    |> redirect(to: "/admin")
+    |> redirect(to: "/admin/dashboard")
   end
 
   def logout(conn, _) do

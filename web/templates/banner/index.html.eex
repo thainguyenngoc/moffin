@@ -1,4 +1,6 @@
-<h2>Listing Banners</h2>
+<h3>Danh sách các banner
+<span class="float-right"><%= link "Banner mới", to: banner_path(@conn, :new), class: "btn btn-info" %></span>
+</h3>
 
 <table class="table">
   <thead>
@@ -14,14 +16,17 @@
     <tr>
       <td><%= banner.title %></td>
 
+      <td>
+        <img class="adm-banner" src="<%= Mofiin.Media.url({ banner.image, banner }) %>" width="300" />
+      </td>
+
       <td class="text-right">
-        <span><%= link "Show", to: banner_path(@conn, :show, banner), class: "btn btn-default btn-xs" %></span>
-        <span><%= link "Edit", to: banner_path(@conn, :edit, banner), class: "btn btn-default btn-xs" %></span>
-        <span><%= link "Delete", to: banner_path(@conn, :delete, banner), method: :get, data: [confirm: "Are you sure?", submit: "parent"], class: "btn btn-danger btn-xs" %></span>
+        <span><%= link "Xem", to: banner_path(@conn, :show, banner), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Sửa", to: banner_path(@conn, :edit, banner), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Xóa", to: banner_path(@conn, :delete, banner), method: :get, data: [confirm: "Are you sure?", submit: "parent"], class: "btn btn-danger btn-xs" %></span>
       </td>
     </tr>
 <% end %>
   </tbody>
 </table>
 
-<span><%= link "New Banner", to: banner_path(@conn, :new) %></span>
