@@ -1,0 +1,18 @@
+<h2>Show Banner</h2>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @banner.title %>
+  </li>
+
+  <li>
+    <strong>Image:</strong>
+    <img src="<%= Mofiin.Media.url({ @banner.image, @banner }) %>" width="300" />
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: banner_path(@conn, :edit, @banner) %></span>
+<span><%= link "Back", to: banner_path(@conn, :index) %></span>

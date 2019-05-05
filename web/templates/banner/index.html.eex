@@ -1,0 +1,27 @@
+<h2>Listing Banners</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Image</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for banner <- @banners do %>
+    <tr>
+      <td><%= banner.title %></td>
+
+      <td class="text-right">
+        <span><%= link "Show", to: banner_path(@conn, :show, banner), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Edit", to: banner_path(@conn, :edit, banner), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Delete", to: banner_path(@conn, :delete, banner), method: :get, data: [confirm: "Are you sure?", submit: "parent"], class: "btn btn-danger btn-xs" %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Banner", to: banner_path(@conn, :new) %></span>

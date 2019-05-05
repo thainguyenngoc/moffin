@@ -9,6 +9,10 @@ use Mix.Config
 config :mofiin,
   ecto_repos: [Mofiin.Repo]
 
+config :mofiin, Mofiin.Auth.Guardian,
+  issuer: "mofiin",
+  secret_key: "bU3Rk4X+gXwOtoRQ+/ldh4U80n4T+MsyXV2ilXsx9kNO3hCgnj/ExrWA7/5WT8V1"
+
 # Configures the endpoint
 config :mofiin, Mofiin.Endpoint,
   url: [host: "localhost"],
@@ -21,6 +25,8 @@ config :mofiin, Mofiin.Endpoint,
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
   metadata: [:request_id]
+
+config :arc, storage: Arc.Storage.Local
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.

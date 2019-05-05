@@ -18,7 +18,7 @@
   <body>
     <div class="container">
       <header class="header">
-        
+        ADMIN
       </header>
 
       <%= if info = get_flash(@conn, :info) do %>

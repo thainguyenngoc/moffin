@@ -20,7 +20,7 @@ defmodule Mofiin.Mixfile do
   def application do
     [
       mod: {Mofiin, []},
-      extra_applications: [:logger]
+      extra_applications: [:logger, :arc_ecto]
     ]
   end
 
@@ -43,7 +43,8 @@ defmodule Mofiin.Mixfile do
       {:plug_cowboy, "~> 1.0"},
       {:guardian, "~> 1.0-beta"},
       {:comeonin, "~> 4.0"},
-      {:bcrypt_elixir, "~> 0.12"}
+      {:bcrypt_elixir, "~> 0.12"},
+      {:arc_ecto, "~> 0.7.0"}
     ]
   end
 

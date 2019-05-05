@@ -19,3 +19,12 @@ import "phoenix_html"
 // paths "./socket" or full ones "web/static/js/socket".
 
 // import socket from "./socket"
+require('babel-polyfill');
+import $ from 'jquery';
+
+require('jquery-ujs');
+require('bootstrap');
+require('jquery-form-validator');
+
+window.$ = $;
+window.jQuery = $;

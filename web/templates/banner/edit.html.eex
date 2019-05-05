@@ -1,0 +1,5 @@
+<h2>Edit Banner</h2>
+
+<%= render "form.html", Map.put(assigns, :action, banner_path(@conn, :update, @banner)) %>
+
+<span><%= link "Back", to: banner_path(@conn, :index) %></span>

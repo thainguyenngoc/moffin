@@ -22,6 +22,8 @@ defmodule Mofiin.Endpoint do
   plug Plug.RequestId
   plug Plug.Logger
 
+  plug Plug.Static, at: "/uploads", from: "uploads"
+
   plug Plug.Parsers,
     parsers: [:urlencoded, :multipart, :json],
     pass: ["*/*"],
