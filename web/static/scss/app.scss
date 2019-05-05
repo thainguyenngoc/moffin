@@ -1,10 +1,22 @@
 @import "./variables";
 
 // Bootstrap
-@import "bootstrap";
+@import "node_modules/bootstrap/scss/bootstrap";
+// @import 'node_modules/bootstrap/scss/functions';
+// @import 'node_modules/bootstrap/scss/variables';
+// @import 'node_modules/bootstrap/scss/mixins';
+// @import 'node_modules/bootstrap/scss/bootstrap';
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+// @import 'bootstrap';
 
 // Global
 @import "./global";
 
 // _components
 @import "./components";
+
+// _components
+@import "./admin/style";
