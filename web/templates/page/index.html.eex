@@ -124,35 +124,21 @@
         <div class="home-hero">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <%= for { banner, i } <- Enum.with_index(@banners) do %>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="<%= i %>" <%= if i == 0 do %>class="active"<% end %>></li>
+                    <% end %>
                 </ol>
                 <div class="carousel-inner">
-                    <div class="carousel-item active ">
+                    <%= for { banner, i } <- Enum.with_index(@banners) do %>
+                    <div class="carousel-item <%= if i == 0 do %>active <% end %> ">
                         <div class="hero-image-container">
                             <div class="hero-block"></div>
                             <img class="d-block w-100"
-                                src="<%= static_path(@conn, "/images/banner.png") %>"
+                                src="<%= Mofiin.Media.url({ banner.image, banner }) %>"
                                 alt="First slide">
                         </div>
                     </div>
-                    <div class="carousel-item ">
-                        <div class="hero-image-container">
-                            <div class="hero-block"></div>
-                            <img class="d-block w-100"
-                                src="<%= static_path(@conn, "/images/banner.png") %>"
-                                alt="First slide">
-                        </div>
-                    </div>
-                    <div class="carousel-item ">
-                        <div class="hero-image-container">
-                            <div class="hero-block"></div>
-                            <img class="d-block w-100"
-                                src="<%= static_path(@conn, "/images/banner.png") %>"
-                                alt="First slide">
-                        </div>
-                    </div>
+                    <% end %>
                     
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

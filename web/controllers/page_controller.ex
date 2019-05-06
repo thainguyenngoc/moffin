@@ -4,9 +4,11 @@ defmodule Mofiin.PageController do
   alias Mofiin.Auth
   alias Mofiin.Auth.User
   alias Mofiin.Auth.Guardian
+  alias Mofiin.Media
 
   def index(conn, _params) do
-    render conn, "index.html"
+    banners = Media.list_banners()
+    render(conn, "index.html", banners: banners)
   end
 
   def dashboard(conn, _params) do
