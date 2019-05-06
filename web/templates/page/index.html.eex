@@ -108,10 +108,10 @@
                     <div class="header-nav-group">
                         <div class="header-nav">
                             <a class="theme-switcher" href="">
-                                SUN
+                                <i class="fa fa-sun-o" aria-hidden="true"></i>
                             </a>
                             <a class="theme-switcher" href="">
-                                NIGHT
+                                <i class="fa fa-moon-o" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
