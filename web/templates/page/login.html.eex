@@ -1,8 +1,8 @@
 
-<h2>Login Page</h2>
+
 <%= if @maybe_user == nil do %>
-  <%= form_for @changeset, @action, fn f -> %>
-    
+  <%= form_for @changeset, @action, [class: 'adm-login-form'], fn f -> %>
+    <h2>Login Page</h2>
     <div class="form-group">
       <%= label f, :username, class: "control-label" %>
       <%= text_input f, :username, class: "form-control" %>
