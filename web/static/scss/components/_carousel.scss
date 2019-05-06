@@ -1,0 +1,28 @@
+.carousel-item {
+  // max-height: 400px;
+}
+
+.carousel-indicators {
+  bottom: -35px;
+
+  li {
+    width: 20px;
+    height: 6px;
+    border-radius: 2em;
+    background-color: $--mofiin-light-red;
+  }
+
+  .active {
+    background-color: $--mofiin-main-red;
+  }
+}
+
+.carousel {
+  margin-bottom: 35px;
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    visibility: hidden;
+    display: none;
+  }
+}

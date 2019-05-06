@@ -9,6 +9,7 @@
 
     <title>Mofiin</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <%= csrf_meta_tag() %>
     <script>
         window.csrfToken = <%= raw Poison.encode!(Plug.CSRFProtection.get_csrf_token()) %>;
@@ -16,10 +17,6 @@
   </head>
 
   <body>
-    <div class="container">
-      <header class="header">
-        
-      </header>
 
       <%= if info = get_flash(@conn, :info) do %>
         <p class="alert alert-info" role="alert"><%= info %></p>
@@ -32,8 +29,6 @@
       <main role="main">
         <%= render @view_module, @view_template, assigns %>
       </main>
-
-    </div> <!-- /container -->
 
     
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>

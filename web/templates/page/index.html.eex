@@ -1,1 +1,567 @@
-Index
+    <div class="home-header">
+        <section class="header">
+            <div class="top-header">
+                <div class="y-container">
+
+                    <div class="header-group">
+                        <div class="header-nav-group header-nav-group--fill">
+                            <a href="#" class="header-logo">
+                                <img src="<%= static_path(@conn, "/images/mofiin-logo.svg") %>" alt="Mofiin-logo">
+                            </a>
+                            <ul class="header-nav">
+                                <li class="header-nav__item">
+                                    <a href="" class="header-nav-link">
+                                        Tin tức
+                                    </a>
+                                </li>
+                                <li class="header-nav__item">
+                                    <a href="" class="header-nav-link">
+                                        Video
+                                    </a>
+                                </li>
+                                <li class="header-nav__item">
+                                    <a href="" class="header-nav-link">
+                                        Ảnh vui
+                                    </a>
+                                </li>
+                                <li class="header-nav__item">
+                                    <a href="" class="header-nav-link">
+                                        Game
+                                    </a>
+                                </li>
+                                <li class="header-nav__item">
+                                    <a href="" class="header-nav-link">
+                                        Dịch vụ
+                                    </a>
+                                </li>
+                            </ul>
+
+
+                        </div>
+
+                        <div class="header-nav-group">
+                            <div class="header-nav">
+                                <a href="" class="primary-btn download-app-btn">
+                                    Tải Mofiin App
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="y-container header-group header-group--sub">
+
+                    <div class="header-nav-group header-nav-group--sub header-nav-group--fill">
+                        <ul class="header-nav">
+                            <li class="header-nav__item">
+                                <a href="" class="header-nav-link">
+                                    Tổng hợp
+                                </a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="" class="header-nav-link">
+                                    Làm đẹp
+                                </a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="" class="header-nav-link">
+                                    Ẩm thực
+                                </a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="" class="header-nav-link">
+                                    Giải trí
+                                </a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="" class="header-nav-link">
+                                    Đời sống
+                                </a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="" class="header-nav-link">
+                                    Xã hội
+                                </a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="" class="header-nav-link">
+                                    Du lịch
+                                </a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="" class="header-nav-link">
+                                    Du lịch
+                                </a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="" class="header-nav-link">
+                                    Công nghệ
+                                </a>
+                            </li>
+                        </ul>
+
+
+                    </div>
+
+                    <div class="header-nav-group">
+                        <div class="header-nav">
+                            <a class="theme-switcher" href="">
+                                SUN
+                            </a>
+                            <a class="theme-switcher" href="">
+                                NIGHT
+                            </a>
+                        </div>
+                    </div>
+
+            </div>
+        </section>
+    </div>
+
+    <section>
+        <div class="home-hero">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active ">
+                        <div class="hero-image-container">
+                            <div class="hero-block"></div>
+                            <img class="d-block w-100"
+                                src="<%= static_path(@conn, "/images/banner.png") %>"
+                                alt="First slide">
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="hero-image-container">
+                            <div class="hero-block"></div>
+                            <img class="d-block w-100"
+                                src="<%= static_path(@conn, "/images/banner.png") %>"
+                                alt="First slide">
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="hero-image-container">
+                            <div class="hero-block"></div>
+                            <img class="d-block w-100"
+                                src="<%= static_path(@conn, "/images/banner.png") %>"
+                                alt="First slide">
+                        </div>
+                    </div>
+                    
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="home-content-container">
+
+        <%# Why %>
+        <section>
+            <div class="y-container">
+                <div class="content-area">
+                    <div class="content-area__title">
+                        Tại sao
+                    </div>
+
+                    <div class="content-area__sub-title">
+                        bạn lại cần sử dụng dịch vụ tăng rate & review của Mofiin?
+                    </div>
+
+                    <div class="content-area__answer">
+                        <div class="answer-section card-type">
+                            <div class="answer-section__img">
+                                <img src="<%= static_path(@conn, "/images/global.png") %>" alt="">
+                            </div>
+                            <div class="answer-section__text">
+                                <p class="card-text">Ứng dụng của bạn được phủ sóng trên mọi kênh truyền thông đa phương
+                                    tiện.</p>
+                            </div>
+                        </div>
+                        <div class="answer-section card-type">
+                            <div class="answer-section__img">
+                                <img src="<%= static_path(@conn, "/images/rocket.png") %>" alt="">
+                            </div>
+                            <div class="answer-section__text">
+                                <p class="card-text">Ứng dụng của bạn được phủ sóng trên mọi kênh truyền thông đa phương
+                                    tiện.</p>
+                            </div>
+                        </div>
+                        <div class="answer-section card-type">
+                            <div class="answer-section__img">
+                                <img src="<%= static_path(@conn, "/images/rating.png") %>" alt="">
+                            </div>
+                            <div class="answer-section__text">
+                                <p class="card-text">Ứng dụng của bạn được phủ sóng trên mọi kênh truyền thông đa phương
+                                    tiện.</p>
+                            </div>
+                        </div>
+                        <div class="answer-section card-type">
+                            <div class="answer-section__img">
+                                <img src="<%= static_path(@conn, "/images/guarantee.png") %>" alt="">
+                            </div>
+                            <div class="answer-section__text">
+                                <p class="card-text">Ứng dụng của bạn được phủ sóng trên mọi kênh truyền thông đa phương
+                                    tiện.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-area__btn">
+                        <a href="" class="primary-btn">
+                            Tải Mofiin App
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <%# Bang gia %>
+        <section>
+            <div class="y-container">
+                <div class="content-area">
+                    <div class="content-area__title">
+                        Bảng giá
+                    </div>
+
+                    <div class="content-area__sub-title">
+                        bạn lại cần sử dụng dịch vụ tăng rate & review của Mofiin?
+                    </div>
+
+                    <div class="content-area__category">
+
+                        <div class="category-section card-type">
+                            <div class="category-section__img">
+                                <img src="<%= static_path(@conn, "/images/crown.png") %>" alt="">
+                            </div>
+                            <div class="category-section__text">
+                                <p class="card-text">Siêu dịch vụ</p>
+                            </div>
+                        </div>
+
+                        <div class="category-section card-type">
+                            <div class="category-section__img">
+                                <img src="<%= static_path(@conn, "/images/mobile-app.png") %>" alt="">
+                            </div>
+                            <div class="category-section__text">
+                                <p class="card-text">Application</p>
+                            </div>
+                        </div>
+
+                        <div class="category-section card-type">
+                            <div class="category-section__img">
+                                <img src="<%= static_path(@conn, "/images/facebook.png") %>" alt="">
+                            </div>
+                            <div class="category-section__text">
+                                <p class="card-text">Facebook</p>
+                            </div>
+                        </div>
+
+                        <div class="category-section card-type">
+                            <div class="category-section__img">
+                                <img src="<%= static_path(@conn, "/images/youtube.png") %>" alt="">
+                            </div>
+                            <div class="category-section__text">
+                                <p class="card-text">Youtube</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="content-area__btn">
+                        <a href="" class="primary-btn">
+                            Tải Mofiin App
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="home-content-container">
+
+        <%# phan hoi %>
+        <section class="response-area">
+            <div class="hightlight-background"></div>
+            <div class="y-container">
+                <div class="content-area">
+                    <div class="content-area__title">
+                        Phản hồi từ khách hàng
+                    </div>
+
+                    <div class="content-area__sub-title">
+                        Những câu hỏi thường gặp
+                    </div>
+
+                    <div class="content-area__response">
+
+                        <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                            </ol>
+                            <div class="carousel-inner card-type">
+
+                                <%# Item 1 %>
+                                <div class="carousel-item active">
+                                    <div class="row response-section">
+                                        <div class="response-section__img col-sm-6">
+                                            <div class="square-image-container">
+                                                <div class="square-block"></div>
+                                                <img class="d-block w-100"
+                                                    src="<%= static_path(@conn, "/images/mcdonald-response.png") %>"
+                                                    alt="First slide">
+                                            </div>
+                                        </div>
+                                        <div class="response-section__text col-sm-6">
+                                            <div class="response-brand-logo">
+                                                <div class="square-image-container">
+                                                    <div class="square-block"></div>
+                                                    <img class="d-block w-100"
+                                                        src="<%= static_path(@conn, "/images/mcdonald.png") %>"
+                                                        alt="First slide">
+                                                </div>
+                                            </div>
+                                            <p class="response-brand-text">
+                                                "MCDonald's: Giòn Da Thấm Thịt - Gà Rán Chuẩn Mỹ"
+                                                "Mofiin đồng hành cùng MCDonald's trong chiến dịch quảng cáo 
+                                                sản phẩm mới với độ phủ sóng toàn quốc, đem lại nền tảng review khách hàng 
+                                                vô cùng chất lượng và tăng doanh thu cho thương hiệu."
+                                            </p>
+                                            <p class="response-brand-rating">
+                                                <img class="star-icon"
+                                                    src="<%= static_path(@conn, "/images/star.svg") %>"
+                                                    alt="star">
+                                                <img class="star-icon"
+                                                    src="<%= static_path(@conn, "/images/star.svg") %>"
+                                                    alt="star">
+                                                <img class="star-icon"
+                                                    src="<%= static_path(@conn, "/images/star.svg") %>"
+                                                    alt="star">
+                                                <img class="star-icon"
+                                                    src="<%= static_path(@conn, "/images/star.svg") %>"
+                                                    alt="star">
+                                                <img class="star-icon"
+                                                    src="<%= static_path(@conn, "/images/star.svg") %>"
+                                                    alt="star">
+                                            
+                                            </p>
+                                            <div class="response-brand-download">
+                                                <a href="" class="primary-btn download-app-btn">
+                                                    Tải Mofiin App
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <%# Item 1 %>
+                                <div class="carousel-item">
+                                    <div class="row response-section">
+                                        <div class="response-section__img col-sm-6">
+                                            <div class="square-image-container">
+                                                <div class="square-block"></div>
+                                                <img class="d-block w-100"
+                                                    src="<%= static_path(@conn, "/images/mcdonald-response.png") %>"
+                                                    alt="First slide">
+                                            </div>
+                                        </div>
+                                        <div class="response-section__text col-sm-6">
+                                            <div class="response-brand-logo">
+                                                <div class="square-image-container">
+                                                    <div class="square-block"></div>
+                                                    <img class="d-block w-100"
+                                                        src="<%= static_path(@conn, "/images/mcdonald.png") %>"
+                                                        alt="First slide">
+                                                </div>
+                                            </div>
+                                            <p class="response-brand-text">
+                                                "MCDonald's: Giòn Da Thấm Thịt - Gà Rán Chuẩn Mỹ"
+                                                "Mofiin đồng hành cùng MCDonald's trong chiến dịch quảng cáo 
+                                                sản phẩm mới với độ phủ sóng toàn quốc, đem lại nền tảng review khách hàng 
+                                                vô cùng chất lượng và tăng doanh thu cho thương hiệu."
+                                            </p>
+                                            <p class="response-brand-rating">
+                                                <img class="star-icon"
+                                                    src="<%= static_path(@conn, "/images/star.svg") %>"
+                                                    alt="star">
+                                                <img class="star-icon"
+                                                    src="<%= static_path(@conn, "/images/star.svg") %>"
+                                                    alt="star">
+                                                <img class="star-icon"
+                                                    src="<%= static_path(@conn, "/images/star.svg") %>"
+                                                    alt="star">
+                                                <img class="star-icon"
+                                                    src="<%= static_path(@conn, "/images/star.svg") %>"
+                                                    alt="star">
+                                                <img class="star-icon"
+                                                    src="<%= static_path(@conn, "/images/star.svg") %>"
+                                                    alt="star">
+                                            
+                                            </p>
+                                            <div class="response-brand-download">
+                                                <a href="" class="primary-btn download-app-btn">
+                                                    Tải Mofiin App
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="home-content-container">
+
+        <%# doanh nghiep %>
+        <section>
+            <div class="content-area">
+                <div class="content-area__title">
+                    Hơn 1000
+                </div>
+
+                <div class="content-area__sub-title">
+                    Doanh nghiệp và influencer đang tin dùng các dịch vụ của Mofiin
+                </div>
+
+                <div class="content-area__brand">
+                    <div class="brand-group">
+
+                        <div class="square-image-container">
+                            <div class="square-block"></div>
+                            <img class="d-block w-100"
+                                src="<%= static_path(@conn, "/images/7up.png") %>"
+                                alt="Fami">
+                        </div>
+
+                        <div class="square-image-container">
+                            <div class="square-block"></div>
+                            <img class="d-block w-100"
+                                src="<%= static_path(@conn, "/images/milo.png") %>"
+                                alt="Fami">
+                        </div>
+
+                        <div class="square-image-container">
+                            <div class="square-block"></div>
+                            <img class="d-block w-100"
+                                src="<%= static_path(@conn, "/images/mcdonald.png") %>"
+                                alt="Fami">
+                        </div>
+
+                        <div class="square-image-container">
+                            <div class="square-block"></div>
+                            <img class="d-block w-100"
+                                src="<%= static_path(@conn, "/images/tiger.png") %>"
+                                alt="Fami">
+                        </div>
+
+                        <div class="square-image-container">
+                            <div class="square-block"></div>
+                            <img class="d-block w-100"
+                                src="<%= static_path(@conn, "/images/fami.png") %>"
+                                alt="Fami">
+                        </div>
+
+                        <div class="square-image-container">
+                            <div class="square-block"></div>
+                            <img class="d-block w-100"
+                                src="<%= static_path(@conn, "/images/fuzetea.png") %>"
+                                alt="Fami">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <section class="footer">
+        <div class="y-container">
+            <div class="row footer-area">
+
+                <div class="footer-area__info col-sm-3">
+                    <a href="#" class="footer-logo">
+                        <img class="d-block w-100" src="<%= static_path(@conn, "/images/mofiin-logo.svg") %>" alt="Mofiin-logo">
+                    </a>
+                    <div class="footer-block-title">
+                        Một sản phẩm mới của Yeah1 Network
+                    </div>
+                    <div class="info-block">
+                        <p>hello@mofiin.com</p>
+                        <p>0937 994 905</p>
+                        <p>201A Nam Kỳ Khởi Nghĩa, P7, Q3, TP.HCM</p>
+                    </div>
+                </div>
+
+                <div class="footer-area__media col-sm-3">
+                    <div class="footer-block-title">
+                        Liên kết
+                    </div>
+                    <div class="info-block">
+                        <p>Khám phá Mofiin App</p>
+                    </div>
+                </div>
+
+                <div class="footer-area__support col-sm-3">
+                    <div class="footer-block-title">
+                        Thỏa thuận
+                    </div>
+                    <div class="info-block">
+                        <a href="#">Điều khoản sử dụng</a>
+                        <a href="#">Quyền riêng tư</a>
+                        <a href="#">FAQ</a>
+                        <p>Giai đoạn thử nghiệm. Đang xin giấy phép từ Bộ Công Thương</p>
+                    </div>
+                </div>
+
+                <div class="footer-area__promo col-sm-3">
+                    <div class="promo-block row">
+                        <a href="#" class="promo-block__qr col-5">
+                            <img class="d-block w-100" src="<%= static_path(@conn, "/images/qr.jpg") %>" alt="Mofiin-logo">
+                        </a>
+                        <div class="promo-block__mobile col-7">
+                            <a href="#" class="android-app">
+                                <img class="d-block w-100" src="<%= static_path(@conn, "/images/android.png") %>" alt="Mofiin-logo">
+                            </a>
+                            <a href="#" class="ios-app">
+                                <img class="d-block w-100" src="<%= static_path(@conn, "/images/ios.png") %>" alt="Mofiin-logo">
+                            </a>
+                        </div>
+                    </div>
+                    <p>Tải ứng dụng Mofiin tại <a href="#">mofiin.com/app</a></p>
+                    <p>Nhập mã <span class="footer-hightlight">WEB</span> để nhận <span class="footer-hightlight">5000₫</span> và thêm nhiều ưu đãi cực chất!!</p>
+                </div>
+
+            </div>
+        </div>
+    </section>

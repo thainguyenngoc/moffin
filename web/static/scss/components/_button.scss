@@ -1,0 +1,13 @@
+.primary-btn {
+  border-radius: 30px;
+  color: $--mofiin-white;
+  background-image: linear-gradient(to right, $--mofiin-main-red, $--mofiin-main-orange);
+  text-transform: uppercase;
+  padding: 10px 30px;
+  font-size: 20px;
+  text-align: center;
+
+  &:hover {
+    background-position: right center;
+  }
+}

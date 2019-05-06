@@ -1,3 +1,37 @@
+body {
+  font-family: "Nunito", "Roboto", Arial, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
 .clearfix {
   width: 100%;
+}
+
+.y-container {
+  max-width: 1350px;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+section > .home-hero {
+  padding: 0 80px;
+  max-width: 1520px;
+  margin: auto;
+
+  @include media-breakpoint-down(lg) {
+    padding: 0;
+  }
 }

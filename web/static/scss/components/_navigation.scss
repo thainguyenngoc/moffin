@@ -1,0 +1,76 @@
+.header-nav {
+  display: flex;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  &__item {
+    margin: 5px 15px 5px 0;
+  }
+}
+
+.header-nav-link {
+  color: $--mofiin-black;
+
+  &:hover {
+    text-decoration: none;
+    color: $--mofiin-main-red;
+  }
+}
+
+.header-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  @include media-breakpoint-down(md) {
+    flex-wrap: wrap;
+
+    .download-app-btn {
+      visibility: hidden;
+      display: none;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    &--sub {
+      visibility: hidden;
+      display: none;
+    }
+  }
+}
+
+.header-nav-group {
+  display: flex;
+  align-items: baseline;
+
+  &--sub {
+    font-size: 0.9em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &--fill {
+    @include media-breakpoint-down(xs) {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.header-logo {
+  margin-right: 15px;
+
+  img {
+    width: 140px;
+    height: 70px;
+  }
+}
+
+.top-header {
+  background-color: $--mofiin-light-grey;
+}
+
+.theme-switcher {
+  margin-right: 40px;
+  width: 2.4em;
+  height: 2.4em;
+}

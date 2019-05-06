@@ -1,0 +1,88 @@
+.footer-logo {
+  width: 160px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-area {
+  margin: 0;
+  margin-bottom: 60px;
+  border-top: 1px solid $--mofiin-light-grey;
+
+  @include media-breakpoint-up(sm) {
+    &__media,
+    &__support,
+    &__promo {
+      margin-top: 120px;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    &__info,
+    &__media,
+    &__support,
+    &__promo {
+      margin-bottom: 20px;
+    }
+  }
+
+
+  p {
+    color: $--mofiin-grey;
+    margin-bottom: 0.4rem;
+  }
+
+  a {
+    margin-bottom: 0.4rem;
+    color: $--mofiin-grey;
+
+    &:hover {
+      color: $--mofiin-dark-grey;
+    }
+  }
+
+  &__support {
+
+    a {
+      display: block;
+    }
+  }
+}
+
+.footer-block-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: $--mofiin-dark-grey;
+  margin-bottom: 10px;
+}
+
+.footer-info {
+  color: $--mofiin-grey;
+}
+
+.promo-block {
+  &__qr {
+    width: 100px;
+  }
+
+  &__mobile {
+    width: 100px;
+    padding-right: 0;
+  }
+}
+
+.info-block {
+  color: $--mofiin-grey;
+}
+
+.android-app,
+.ios-app {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer-hightlight {
+  color: $--mofiin-main-orange;
+  font-size: 1.3em;
+  font-weight: 600;
+}
